@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS job_market;
+CREATE DATABASE job_market;
