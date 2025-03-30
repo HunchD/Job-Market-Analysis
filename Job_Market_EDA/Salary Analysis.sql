@@ -28,13 +28,13 @@ JOIN company_info ON ranked_salary.company_id = company_info.company_id
 ORDER BY salary_year_avg DESC;
 
 /* 
-Salary Progression: Salaries increase significantly with seniority and specialization, with senior data roles earning up to $154,050.
+Salary Progression: Salaries increase significantly with seniority and specialization, with senior data roles earning up to an average of $154,050.
 
-Data and AI Demand: Data Scientists ($135,929) and Machine Learning Engineers ($126,786) command high salaries, reflecting strong demand for AI expertise.
+Data and AI Demand: Data Scientists ($135,929) and Machine Learning Engineers ($126,786) command high average salaries, reflecting strong demand for AI expertise.
 
 Cloud Specialization: Cloud Engineers ($111,268) are well-compensated, emphasizing the growing reliance on cloud infrastructure.
 
-Seniority Premium: Transitioning from mid-level to senior roles results in substantial salary jumps, often exceeding $20,000.
+Seniority Premium: Transitioning from mid-level to senior roles results in substantial average salary jumps, often exceeding $20,000.
 
 Career Growth Opportunities: Analysts can significantly increase their earnings by upskilling in data engineering, machine learning, or cloud technologies.
  */
