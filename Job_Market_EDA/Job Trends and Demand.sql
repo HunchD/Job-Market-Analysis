@@ -1,4 +1,4 @@
--- Finding the top 3 job titles with the highest demand in the job market
+-- Finding the job titles with the highest demand in the job market
 
 SELECT job_title_short, COUNT(job_id) AS job_title_count
 FROM job_postings_info
@@ -8,6 +8,7 @@ ORDER BY job_title_count DESC;
 
 
 -- Finding the top skills that are required for these roles
+
 WITH top_job_titles AS (
     SELECT job_title_short
     FROM job_postings_info
@@ -34,11 +35,11 @@ ORDER BY job_title_short, skill_count DESC;
 
 
 /* 
-Python and SQL are the most in-demand skills, with a significantly higher number of job postings compared to others.
+Top Skills in Demand: Python and SQL lead with the highest number of job postings.
 
-Excel remains essential, particularly for analyst roles.
+Excel always at Prime: A staple for analyst roles, maintaining its importance.
 
-Machine Learning and Spark are notably sought after, reflecting the growing emphasis on AI and big data technologies.
+AI and Big Data Focus: Machine Learning and Spark are highly valued in the job market.
 
-Skills like Tableau and Power BI indicate the demand for data visualization and business intelligence tools. 
+Visualization Tools on the Rise: Tableau and Power BI indicate the demand for data visualization and business intelligence.
 */

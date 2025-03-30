@@ -1,13 +1,5 @@
 -- Finding the skills associated with higher salaries
 
-SELECT job_postings_info.job_id, skill_id, salary_year_avg,
-        AVG(salary_year_avg) OVER (PARTITION BY skill_id) skill_salary_avg
-FROM job_postings_info
-JOIN skills_job_info ON job_postings_info.job_id = skills_job_info.job_id
-WHERE salary_year_avg IS NOT NULL
-ORDER BY skill_id
-LIMIT 100;
-
 WITH skill_salary AS
 (
     SELECT job_postings_info.job_id, skill_id, salary_year_avg,
